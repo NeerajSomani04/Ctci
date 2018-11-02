@@ -1,0 +1,11 @@
+Ch 2 --> Linked List 
+
+Linked list represent sequence of Nodes. 
+Single linked list --> each node point to next node in the list
+Doubly LL --> each node points to both next node and previous node in the list.
+
+No constant time element access in LL. means, to find Kth element we need to iterate through K element.
+
+Benefit of LL --> you can add and remove items from the begining of LL in constant time. This is useful for many specific applications.
+
+
