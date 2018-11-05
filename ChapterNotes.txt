@@ -62,8 +62,25 @@ push ( i tern): Add an item to the top of the stack.
 peek(): Return the top of the stack.
 is Empty (): Return true if and only if the stack is empty.
 
-Unlike an array, a stack does not offer constant-time access to the i th item. However, it does allow constanttime
-adds and removes, as it doesn't require shifting elements around.
+Unlike an array, a stack does not offer constant-time access to the i th item. However, it does allow constant time adds and removes, as it doesn't require shifting elements around.
 
+A stack can be implemented using a linked list or an arraylist.
+** Stacks are mostly useful for recursive algorithms. 
 
+Queue --> A queue implements FIFO (first-in first-out) ordering. (example, same as a line or queue at a ticket stand)
+It uses the operations:
+add ( i tern): Add an item to the end of the list.
+remove (): Remove the first item in the list.
+peek ( ) : Return the top of the queue.
+is Empty(): Return true if and only if the queue is empty.
+
+A queue can also be implemented with a linked list. In fact, they are essentially the same thing, as long as items are added and removed from opposite sides.
+
+**** It is especially easy to mess up the updating of the first and last nodes in a queue. Be sure to double check this.
+
+** queues are often used is in breadth-first search or in implementing a cache.
+
+Chapter 4 --> Trees and Graphs
+Searching a tree is more complicated than searching in a linearly organized data structure such as an array or linked list.
+Additionally, the worst case and average case time may vary wildly, and we must evaluate both aspects of any algorithm.
 
