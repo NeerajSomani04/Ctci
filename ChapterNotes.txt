@@ -1,3 +1,37 @@
+Chapter 1 --> Arrays and Strings
+
+Hash Table --> A hash table is a data structure that maps keys to values for highly efficient lookup. 
+   A simple implementation example, we use an array of linked lists and a hash code function.
+   1. Compute hash code for "Keys". (note: two different key can have same hash code)
+   2. Map hash code with index of array using some approach {example, hash(key) % array_length}
+   3. At every index there will be linked list of keys and values.
+
+   Hence, To retrieve the value pair by its key, you repeat this process. Compute the hash code from the key, and then
+   compute the index from the hash code. Then, search through the linked list for the value with this key.
+
+   The worst case runtime is O(N), where N is the number of keys. This could be because of high collision for two different keys with the same hash code, or two different hash codes that map to the same index.
+   A good implementation that keeps collisions to a minimum would have runtime O(1).
+
+   Alternative approach is hash table with a balanced binary search tree, runtime would be O (log N). The advantage is potentially using less space, as no need of large Array and iteration over keys can be in ordered in somecases.
+
+--> Arraylist / Resizable Array --> An Arraylist is resizable array, while still providing O(1) runtime access. A typical implementation
+is that when the array is full, the array doubles in size. Each doubling takes 0(N) time, but happens so rarely that its amortized insertion time is still  O(1). "resizing factor" can be different in different languages.
+
+** very imp data structure for interview.
+
+--> StringBuilder --> concatenating a list of strings
+On each concatenation, a new copy of the string is created, and the two strings are copied over, character by character.
+The total time therefore is O(x + 2x + . . . + nx). This reduces to O(xn2).
+
+Why is it O(xn2)? --> Because 1 + 2 + ... + n equals n(n+1)/2, or O(n2).
+
+--> StringBuilder can help you avoid.this problem. StringBuilder simply creates a resizable array of all the strings, copying them back to a string only when necessary.
+
+A good exercise to practice strings, arrays, and general data structures is to implement your own version of
+StringBuilder, HashTable and Array List.
+
+Additional Reading: Hash Table Collision Resolution (pg 636), Rabin-Karp Substring Search (pg 636).
+
 Ch 2 --> Linked List 
 
 Linked list represent sequence of Nodes. 
@@ -16,19 +50,20 @@ Runner Technique in Linked list --> Use of two pointers simultaneously to iterat
 Recursive LL approach --> This approach takes O(N) space, where N is depth of recursive call.
 Recursive algorithm means, making a call iteratively.
 
-Chapter 1 --> Arrays and Strings
+Chapter 3 --> Stacks and Queues
 
-Hash Table --> A hash table is a data structure that maps keys to values for highly efficient lookup. 
-A simple implementation example, we use an array of linked lists and a hash code function.
-1. Compute hash code for "Keys". (note: two different key can have same hash code)
-2. Map hash code with index of array using some approach {example, hash(key) % array_length}
-3. At every index there will be linked list of keys and values.
+Stacks --> stack data structure is precisely what it sounds like: a stack of data.
+A stack uses LIFO (last-in first-out) ordering. similar to, a stack of dinner plates.
+In certain types of problems, it can be favorable to store data in a stack rather than in an array.
 
-Hence, To retrieve the value pair by its key, you repeat this process. Compute the hash code from the key, and then
-compute the index from the hash code. Then, search through the linked list for the value with this key.
+It uses the following operations:
+pop ( ) : Remove the top item from the stack.
+push ( i tern): Add an item to the top of the stack.
+peek(): Return the top of the stack.
+is Empty (): Return true if and only if the stack is empty.
 
-The worst case runtime is O(N), where N is the number of keys. This could be because of high collision for two different keys with the same hash code, or two different hash codes that map to the same index.
-A good implementation that keeps collisions to a minimum would have runtime O(1).
+Unlike an array, a stack does not offer constant-time access to the i th item. However, it does allow constanttime
+adds and removes, as it doesn't require shifting elements around.
 
-Alternative approach is hash table with a balanced binary search tree.
- 
+
+
