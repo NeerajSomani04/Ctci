@@ -15,3 +15,20 @@ Runner Technique in Linked list --> Use of two pointers simultaneously to iterat
 
 Recursive LL approach --> This approach takes O(N) space, where N is depth of recursive call.
 Recursive algorithm means, making a call iteratively.
+
+Chapter 1 --> Arrays and Strings
+
+Hash Table --> A hash table is a data structure that maps keys to values for highly efficient lookup. 
+A simple implementation example, we use an array of linked lists and a hash code function.
+1. Compute hash code for "Keys". (note: two different key can have same hash code)
+2. Map hash code with index of array using some approach {example, hash(key) % array_length}
+3. At every index there will be linked list of keys and values.
+
+Hence, To retrieve the value pair by its key, you repeat this process. Compute the hash code from the key, and then
+compute the index from the hash code. Then, search through the linked list for the value with this key.
+
+The worst case runtime is O(N), where N is the number of keys. This could be because of high collision for two different keys with the same hash code, or two different hash codes that map to the same index.
+A good implementation that keeps collisions to a minimum would have runtime O(1).
+
+Alternative approach is hash table with a balanced binary search tree.
+ 
