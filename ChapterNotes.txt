@@ -164,12 +164,15 @@ Although, mostly Hash table runtime considered as O(1) but its not entirely true
 
 Most of the time we pass around a reference to the current node in the tree and directly lookup the actual lookup word, looking for * node or boolean flag node.
 
-Graphs --> 
+Graphs --> A graph is simply a collection of nodes with edges between (some of) them.
 A tree is actually a type of graph, but not all graphs are trees. Simply put, a tree is a connected graph without cycles.
 
+Two types of Graph --> 
+Directed --> directed edges are like a one-way street
+Undirected --> undirected edges are like a two-way street
+--> The graph might consist of multiple isolated subgraphs. If there is a path between every pair of vertices, it is called a "connected graph."
+--> The graph can also have cycles (or not). An "acyclic graph" is one without cycles.
 
-
-
-
+In Programming, two common ways to represent a graph -->
 
 
