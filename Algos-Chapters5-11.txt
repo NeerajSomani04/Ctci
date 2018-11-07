@@ -1,0 +1,8 @@
+Chapter 5 --> Bit Manipulation --> a useful technique to optimize your code.
+
+Bit Manipulation By Hand --> 
+Bit Facts and Tricks --> 
+
+** Need to come back to this chapter again when needed.
+
+Chapter 6 --> Math and Logic Puzzles/brainteaser -->
