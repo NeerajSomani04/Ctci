@@ -215,6 +215,3 @@ However BFS is generally better, if we want to find the shortest path (or just a
 Bidirectional Search --> This is used to find the shortest path between a source and destination node. It operates by essentially running two simultaneous BFS, one from each node. When their searches collide, we have found a path.
 
 ** Need to read this chapter again and few Additional Reading: Topological Sort (pg 632), Dijkstra's Algorithm (pg 633), AVL Trees (pg 637), RedBlackTrees (pg 639).
-
-
-Chapter 5 --> Bit Manipulation
